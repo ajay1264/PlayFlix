@@ -1,11 +1,3 @@
-import express from 'express'
+import mongoose from 'mongoose'
+import { DB_NAME } from './constants.js';
 
-const app = express()
-
-
-const port = process.env.PORT || 8000;
-
-app.listen(port, () => {
-    console.log(`Server is at http://localhost:${port}`);
-    
-})
